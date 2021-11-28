@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/view_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/Custom.Widget.CardView">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayoutUpper"
+        android:background="@android:color/white"
+        android:padding="8dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#cccccc"
+            android:id="@+id/dividerOne"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:text="Bonus in 2021"
+            android:layout_marginTop="10dp"
+            android:textColor="#CCCCCC"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="6dp"/>
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/dividerOne"
+            android:layout_margin="5dp"
+            android:id="@+id/imageView"/>
+
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/dividerOne"
+            android:layout_toRightOf="@id/imageView"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textViewStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dividerOne"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="right"
+            android:textColor="#CCCCCC"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/inprogressStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_below="@+id/textViewStatus"
+            android:textColor="#FFA500"
+            android:text="In Progress"
+            android:layout_marginRight="2dp"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTitle"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="6dp"
+            android:textColor="#CCCCCC"
+            android:layout_toRightOf="@id/imageView"
+
+            />
+
+        <TextView
+            android:id="@+id/textViewAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewDate"
+            android:layout_marginTop="10dp"
+            android:textColor="#CCCCCC"
+            android:textSize="12sp"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/imageView"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewAmountValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewAmount"
+            android:textStyle="bold"
+            android:layout_marginLeft="6dp"
+            android:textColor="#000000"
+            android:layout_toRightOf="@id/imageView">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textViewAccountInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_below="@id/textViewAmountValue"
+            android:layout_marginTop="5dp"
+            android:textColor="#cccccc"
+            android:text="Account Info"
+            android:layout_toRightOf="@id/imageView">
+
+        </TextView>
+
+        <View
+            android:layout_width="320dp"
+            android:layout_height="2dp"
+            android:background="#D3D3D3"
+            android:layout_margin="16dp"
+            android:layout_toRightOf="@+id/textViewAccountInfo"
+            android:layout_below="@+id/textViewAmountValue"
+            android:layout_marginLeft="20dp">
+
+        </View>
+
+
+        <TextView
+            android:id="@+id/textViewAccounterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewAccountInfo"
+            android:textStyle="bold"
+            android:layout_marginLeft="6dp"
+            android:textColor="#000000"
+            android:layout_toRightOf="@id/imageView"/>
+
+        <TextView
+            android:id="@+id/textViewDeductions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_below="@id/textViewAccounterName"
+            android:textColor="#cccccc"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/imageView">
+        </TextView>
+
+        <View
+            android:layout_width="320dp"
+            android:layout_height="2dp"
+            android:background="#D3D3D3"
+            android:layout_margin="21dp"
+            android:layout_toRightOf="@+id/textViewDeductions"
+            android:layout_below="@+id/textViewAccounterName"
+            android:layout_marginLeft="20dp"/>
+
+
+
+        <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDeductions"
+        android:id="@+id/relativeLayoutLOwer"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:weightSum="3.5"
+            android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/serviceText"
+                android:textColor="#cccccc"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="45dp"/>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/serviceText"
+                    android:layout_marginLeft="40dp"
+                    android:background="#D3D3D3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/serviceValue"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_below="@+id/serviceText"
+                android:layout_marginLeft="45dp"
+                />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tdsText"
+                    android:textColor="#cccccc"
+                    android:layout_marginTop="5dp"/>
+
+
+
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tdsText"
+                    android:layout_marginLeft="40dp"
+                    android:background="#D3D3D3"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tdsValue"
+                    android:layout_below="@+id/tdsText"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+
+                    />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/impsFee"
+                    android:textColor="#cccccc"
+                    android:layout_marginTop="5dp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/impsValue"
+                    android:textColor="#000000"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayoutLOwer">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#cccccc"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
